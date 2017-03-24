@@ -1,12 +1,6 @@
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-  greet() {
-    return `Hi, my name is ${this.name} and I am ${this.age}.`;
-  }
-}
+import TimerComponent from './timer';
 
-console.log(new Person('Bob', 42).greet());
+ReactDOM.render(<TimerComponent />, document.getElementById('timer-wrapper'));
